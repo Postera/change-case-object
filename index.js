@@ -7,9 +7,9 @@ var changeKeys = function changeKeys(transformer, obj) {
 
   if (Array.isArray(obj)) {
     return obj.map(function keysMap(key) {
-      if (typeof key === 'string') {
+      /*if (typeof key === 'string') {
         return transformer(key);
-      }
+      }*/
 
       return changeKeys(transformer, key);
     });
